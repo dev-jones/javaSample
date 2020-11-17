@@ -4,8 +4,8 @@ public class Solution {
 
 	public static void main(String[] args) {
 		
-		int[] progresses = { 93, 30, 55 };
-		int[] speeds = { 1, 30, 5 };
+		int[] progresses = { 93, 30 };
+		int[] speeds = { 1, 30 };
 		
 		//int[] progresses = { 95, 90, 99, 99, 80, 99 };
 		//int[] speeds = { 1, 1, 1, 1, 1, 1 };
@@ -61,3 +61,48 @@ progresses					speeds				return
 ※ 공지 - 2020년 7월 14일 테스트케이스가 추가되었습니다.
 
 */
+
+
+/*
+
+풀이과정
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

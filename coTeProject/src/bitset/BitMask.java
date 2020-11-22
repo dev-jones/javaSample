@@ -17,7 +17,7 @@ public class BitMask {
 		// 원소 추가
 		int toppings = 0;	// 최초에는 토핑이 아무것도 없음
 		int p = 3;	// 원래 p(0<=p<20) 이지만, 여기서는 3이라 가정한다.
-		toppings = toppings | (1 << p);
+		toppings |= (1 << p);
 		
 		// 원소의 포함 여부 확인
 		//System.out.println(toppings & (1 << p));
@@ -42,6 +42,27 @@ public class BitMask {
 		// 집합의 크기 구하기
 		Integer.bitCount(toppings);	// 자바에서 제공함-_-;
 		System.out.println(bitCount(toppings));
+		
+		// 올리브 토핑 추가하기
+		int o = 5;
+		toppings |= (1 << o);
+		
+		// 최소 원소 찾기
+		System.out.println(toppings);
+		// int maxE = Integer.numberOfLeadingZeros(toppings);	// maxE의 값이 26인데, int는 32비트 정수형이 디폴트.
+		int minE = Integer.numberOfTrailingZeros(toppings);
+		System.out.println("toppings의 최하위 비트는? " + minE);
+		
+			// 해당비트를 직접구해.
+		int firstTopping = (toppings & -toppings);
+		System.out.println("firstToppings : " + firstTopping);
+		
+		// 최소 원소 지우기
+		toppings &= (toppings - 1);
+		
+		// 모든 부분 집합 순회하기
+		int subset = toppings;	// subset은 toppings의 부분집합
+		subset = (subset - 1) & toppings;
 	}
 	
 	// 집합의 크기 구하기

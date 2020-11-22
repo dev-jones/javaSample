@@ -15,6 +15,7 @@ public class BitOperNot {
 		// 1의 보수
 		
 		System.out.println(~8);
+		System.out.println(~-8);
 		
 		/*
 		결과가  -9인 이유

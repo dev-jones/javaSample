@@ -13,5 +13,7 @@ public class Main {
 		System.out.println(b.get(10));
 		System.out.println(b.get(100));
 		System.out.println(b.get(0));
+		
+		//
 	}
 }
